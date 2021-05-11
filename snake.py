@@ -5,8 +5,6 @@ x = 300
 y = 300
 d = 20
 
-
-
 #Definindo padrões de cores
 azul = (50, 100,213)
 laranja = (205, 102, 0)
@@ -16,9 +14,11 @@ pygame.display.set_caption('Snake Kanzie')
 tela.fill(azul)
 clock = pygame.time.Clock()
 
+
 def desenha_cobra():
     pygame.draw.rect(tela, laranja, [x, y, d, d])
 
+    
 def mover_cobra(x, y):
     delta_x = 0
     delta_y = 0 
@@ -42,9 +42,6 @@ def mover_cobra(x, y):
     y = y + delta_y
 
     return x, y
-
-
-
 
 
 while True:
