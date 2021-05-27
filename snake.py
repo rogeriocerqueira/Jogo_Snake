@@ -43,7 +43,7 @@ def mover_cobra(x, y):
 
     return x, y
 
-
+  
 while True:
     pygame.display.update()
     desenha_cobra()
